@@ -1,0 +1,180 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: lightcoral;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo b{
+    color: white;
+}
+
+nav{
+    display: flex;
+    gap: 25px;
+}
+
+nav a{
+    color: white;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    transform: scale(1.2)
+}
+
+main{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shape-selector{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+}
+
+.shape-selector h2{
+    color:rgb(12, 21, 100);
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.error{
+    color:pink;
+    text-align: left;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 10px;
+     display: none;
+}
+
+.shape-selector select{
+    width: 100%;
+    padding: 10px 20px;
+    border:1px solid grey;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.shape-selector select:focus{
+    border-color: lightcoral;
+}
+
+.shape-selector button{
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid lightcoral;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color:wheat;
+    background-color: lightcoral;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.shape-selector button:hover{
+    background-color: brown;
+}
+
+
+/* result styling starts here */
+.result{
+    width: 40%;
+    height: 90%;
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:15px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+}
+
+.watermark {
+    width: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+}
+
+.brand{
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:15px
+}
+
+.brand img{
+    width: 25px;
+}
+
+.brand b{
+    font-size: 15px;
+}
+
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: lightcoral;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-size: 11px;
+    color: white;
+}
